@@ -55,6 +55,7 @@ class CoinMarketCap:
                 "symbol": ",".join(symbol),
             },
         )
+
         raw = json.loads(response.content)["data"]
         return raw
 
